@@ -26,13 +26,13 @@ Use jQuery to make a copy of the HTML template of the photo component. For each 
 
 Number and name of feature: ____2) Filter Images____________________________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: __90min___
 
-Start time: _____
+Start time: __3:20pm___
 
-Finish time: _____
+Finish time: __4:20pm___
 
-Actual time needed to complete: _____
+Actual time needed to complete: __60min___
 
 ## Feature #2: Filter images
 Why are we implementing this feature?

@@ -1,7 +1,7 @@
 'use strict';
 
 
-
+let animalArray = [];
 
 // template for holding content
 function Animal(animal) {
@@ -10,7 +10,7 @@ function Animal(animal) {
     this.description = animal.description;
     this.keyword = animal.keyword;
     this.horns = animal.horns;
-
+    animalArray.push(this);
 }
 
 // create a copy of the animal
@@ -46,3 +46,11 @@ Animal.readJson = () => {
         })
 }
 $(() => Animal.readJson());
+
+// create select element and add titles for unique images
+$('select').on('change', function(){
+    let $currentAnimal = $(this).val();
+    $('section').hide();
+    $(`.${$currentAnimal}`).show();
+    console.log($currentAnimal);
+});
