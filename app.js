@@ -15,11 +15,11 @@ function Animal(animal) {
 
 // create a copy of the animal
 
-Animal.prototype.render = function() {
+Animal.prototype.render = function () {
     let $animalClone = $('.photo').clone();
-   
 
-// apply information to elements
+
+    // apply information to elements
     $animalClone.find('h2').text(this.title);
     $animalClone.find('img').attr('src', this.image_url);
     $animalClone.find('p').text(this.description);
@@ -43,12 +43,13 @@ Animal.readJson = () => {
                 console.log('dog obj', animal);
                 animal.render();
             })
+            $('.photo').hide();
         })
 }
 $(() => Animal.readJson());
 
 // create select element and add titles for unique images
-$('select').on('change', function(){
+$('select').on('change', function () {
     let $currentAnimal = $(this).val();
     $('section').hide();
     $(`.${$currentAnimal}`).show();
