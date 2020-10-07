@@ -80,15 +80,15 @@ Given that a user opens the application in the browser When the user clicks on a
 Add navigation for the user to switch between two pages. Each page should render a unique set of images from one of the two provided JSON files.
 Reset the filters, then repopulate them using only keywords from the images currently being displayed.
 
-Number and name of feature: ________________________________
+Number and name of feature: ___________Feature 1: Pagination_____________________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: _60 min____
 
-Start time: _____
+Start time: __2pm___
 
-Finish time: _____
+Finish time: __2:55pm___
 
-Actual time needed to complete: _____
+Actual time needed to complete: __55min___
 
 
 ## Feature 2: Templating
@@ -101,15 +101,15 @@ Given that a user opens the application in the browser When the images are displ
 Create the appropriate Mustache template in your HTML with the same `<h2>`, `<img>`, and `<p>` elements as the jQuery template from the prior lab.
 Refactor the method that renders your images to use Mustache instead of making a copy with jQuery.
 
-Number and name of feature: ________________________________
+Number and name of feature: ___Feature 2: Templating_____________________________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: _60 min____
 
-Start time: _____
+Start time: __2:55pm___
 
-Finish time: _____
+Finish time: __4:05pm___
 
-Actual time needed to complete: _____
+Actual time needed to complete: __70min___
 
 
 ## Feature 3: Styling with Flexbox
@@ -120,6 +120,17 @@ Given that a user opens the application in the browser When the user navigates t
 
 *How are we implementing it?*
 Refactor your CSS to use Flexbox instead of floats. You are welcome to use a combination of floats and Flexbox, as you see fit.
+
+Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
 
 ## Feature 4: Sort the images
 Why are we implementing this feature?
