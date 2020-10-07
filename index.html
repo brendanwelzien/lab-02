@@ -11,6 +11,15 @@
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/layouts.css">
   <link rel="stylesheet" href="/css/modules.css">
+
+  <script id="mustache" type="text/x-tmpl-mustache">
+    <div id= "animal-template">
+      <h2> {{ title }} </h2>
+      <img src="{{ image_url }}" alt="{{ keyword }}">
+      <p> {{ description }} </p>
+      <p> Amount of horns: {{ horns }} </p>
+    </div>
+  </script>
 </head>
 
 <body>
@@ -48,6 +57,7 @@
     </section>
   </main>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js"></script>
   <script src="app.js"></script>
 </body>
 
