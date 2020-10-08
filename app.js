@@ -46,7 +46,7 @@ Animal.readJson = () => {
                 animal.render();
             })
         })
-            .then(() => $.ajax('page-2.json', ajaxFrame)
+        .then(() => $.ajax('page-2.json', ajaxFrame)
             .then(info => {
                 info.forEach(item => {
                     console.log('test');
@@ -54,9 +54,10 @@ Animal.readJson = () => {
                     let animal = new Animal(item, page);
                     console.log('animal obj', animal);
                     animal.render();
-                })}))
-             //$('.photo').hide();
-        }
+                })
+            }))
+    //$('.photo').hide();
+}
 
 $(() => Animal.readJson());
 
@@ -69,18 +70,42 @@ $('select').on('change', function () {
 });
 
 // buttons
- $('#pageOne').on('click', getFile);
+$('#pageOne').on('click', getFile);
 function getFile() {
     $('.2').hide();
     $('.1').show();
     //$.get('page-1.json');
-   // animalArray; 
+    // animalArray; 
 }
 $('#pageTwo').on('click', otherFile);
-function otherFile () {
+function otherFile() {
     $('.1').hide();
     $('.2').show();
     //$.get('page-2.json');
     //animalArray;
 }
 
+// arranging the images 
+$('#assemble').on('click', order);
+function order() {
+    let option = $(this).val();
+    if (option === 'title') {
+        animalArray.sort((a, b) => {
+            if (a.title < b.title) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
+    }
+    else if (option === 'horns') {
+        animalArray.sort((a, b) => {
+            if (a.horns < b.horns) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
+    }
+    animalArray.forEach((allAnimals) => allAnimals.render()); // invokes the images
+}

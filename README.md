@@ -121,15 +121,15 @@ Given that a user opens the application in the browser When the user navigates t
 *How are we implementing it?*
 Refactor your CSS to use Flexbox instead of floats. You are welcome to use a combination of floats and Flexbox, as you see fit.
 
-Number and name of feature: ________________________________
+Number and name of feature: Feature 3: Styling with Flexbox 
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 5 minutes
 
-Start time: _____
+Start time: 04:05
 
-Finish time: _____
+Finish time: 04:10
 
-Actual time needed to complete: _____
+Actual time needed to complete: 5 minutes [ completed yesterday ]
 
 
 ## Feature 4: Sort the images
@@ -138,15 +138,15 @@ As a user, I want to be able to sort the images so that there is an order to the
 What are we going to implement?
 Given that a user is presented with sort options When the user clicks on one option Then the images should be sorted accordingly
 
-Number and name of feature: ________________________________
+Number and name of feature: Feature 4: Sort the images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 90 minutes
 
-Start time: _____
+Start time: 04:10
 
-Finish time: _____
+Finish time: 05:10
 
-Actual time needed to complete: _____
+Actual time needed to complete: 05:10
 
 
 *How are we implementing it?*
