@@ -11,11 +11,29 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layouts.css">
   <link rel="stylesheet" href="css/modules.css">
+  <script id="animal-template" type="text/x-templ-mustache">
+    <section id="{{ title }}" class="{{ page }}">
+    <h2> {{ title }} </h2>
+    <img src="{{ image_url }}" alt="{{ keyword }}">
+    <p> {{ description }} </p>
+    <p> Amount of horns {{ horns }} </p>
+    </section>
+  </script>
 </head>
 
 <body>
   <header>
     <h1>The Gallery of Horns</h1>
+    <div>
+      <button id="pageOne">Page 1</button>
+      <button id="pageTwo">Page 2</button>
+    </div>
+    <select id="assemble">
+      <option value="default">Sort</option>
+      <option value="title">TITLE</option>
+      <option value="horns">HORNS</option>
+    </select>
+
     <select>
       <option title="default">Filter by Keyword</option>
       <option title="UniWhal">UniWhal</option>
@@ -39,6 +57,7 @@
       <option title="Horned Lizard">Horned</option>
       <option title="Smaug">Smaug</option>
     </select>
+
   </header>
   <main>
     <section class="photo">
@@ -48,6 +67,7 @@
     </section>
   </main>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js"></script>
   <script src="app.js"></script>
 </body>
 
